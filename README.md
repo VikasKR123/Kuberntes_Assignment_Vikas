@@ -16,9 +16,9 @@ Create a Dockerfile to package your application along with Tomcat.
 ## 4. Build Docker Image
 Use the following command to build the Docker image:<br>
 <b> ```docker build -t vikaskarbail/java-app:latest .```<b>
-## 6. Write Kubernetes YAML Files
+## 5. Write Kubernetes YAML Files
 Deployment YAML (deployment.yaml) and service.yaml
-## 7. Deploy on Minikube
+## 6. Deploy on Minikube
 <b>```minikube start```</b><br>
 <b>```kubectl apply -f deployment.yaml```</b><br>
 ```kubectl apply -f service.yaml```<br>
