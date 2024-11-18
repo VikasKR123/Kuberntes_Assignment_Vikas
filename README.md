@@ -13,6 +13,13 @@ First, build the JAR file from your Java project using Maven.<br>
 This will create a .jar file in the target directory of your project.
 ## 3.Write the Dockerfile
 Create a Dockerfile to package your application along with Tomcat.
+
+To reduce the size of the Docker image, I used a <b>multi-stage build</b> technique. Multi-stage builds optimize the image by dividing it into stages. In this approach, all intermediate stages are used only during the build process and are not included in the final image. The intermediate stages are converted to binary content, and only the necessary binaries or artifacts from these stages are carried over to the final image, significantly reducing its size.
+
+for ex:
+
+
+
 ## 4. Build Docker Image
 Use the following command to build the Docker image:<br>
 <b> ```docker build -t vikaskarbail/java-app:latest .```<b>
