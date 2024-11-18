@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: java-deployment-v
+  name: java-deployment-vik
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: tomcat-app
+      app: tomcat-app1
   template:
     metadata:
       labels:
-        app: tomcat-app
+        app: tomcat-app1
     spec:
       containers:
-      - name: java-app-vikas
-        image: vikaskarbail/java-app-vikas:latest
+      - name: java-app-vikas1
+        image: vikaskarbail/my-java-app2:latest
         ports:
         - containerPort: 8080
